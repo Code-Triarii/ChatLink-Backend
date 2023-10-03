@@ -9,5 +9,6 @@ def sent_message(data):
         'receive_message', 
         (data['user'], data['message']),
         broadcast=True,
-        include_self=False
+        include_self=True,
+        to=data['room_id']
         )

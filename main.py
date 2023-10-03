@@ -4,7 +4,8 @@ from flask_restx import Api, Resource
 from config import get_config
 from sockets.base_events import connect, user_disconnect
 from sockets.user_events.room import on_join, on_leave
-from sockets.user_events.auth import sent_message, user_connection
+from sockets.user_events.auth import user_connection
+from sockets.user_events import sent_message
 
 config = get_config()
 
