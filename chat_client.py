@@ -34,6 +34,7 @@ def user_connection():
     return data
 
 @sio.on('receive_message')
+<<<<<<< HEAD
 def receive_message(user, message, join=False):
     if(join):
         print(f'User {user} joined to the chat room.')
@@ -41,6 +42,11 @@ def receive_message(user, message, join=False):
         print(f'Message received by {user} {message}')
     else:
         print(f'User {user} left the chat room.')
+=======
+def receive_message(user, message):
+    print(f'Message received by {user} {message}')
+
+>>>>>>> 97b3cc4f379a5ce3259500aa81157dd3acdd60ae
 @sio.event
 def send_message(user, message, room_id):
     sio.emit('sent_message', {'user': str(user), 'message': str(message), 'room_id': str(room_id)})
