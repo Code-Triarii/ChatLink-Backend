@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export ENVIRONMENT_ENV_VAR="dev"
+export DEFAULT_ADMIN_TOKEN_ENV_VAR="token"
+export COOKIE_SECRET_ENV_VAR="secret"
+export HOST_ENV_VAR="localhost"
+export HOST_PORT_ENV_VAR="8080"
+export MONGODB_CONNECTION_URI_ENV_VAR=
+export MONGODB_DATABASE_ENV_VAR=
+export MONGODB_USERS_COLL_ENV_VAR=
+
